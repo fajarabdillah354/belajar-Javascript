@@ -1,0 +1,8 @@
+callback adalah mekanisme untuk memanggil kembali kode yang ada di proses asyncronus
+* callback biasanya berbentuk function dalam parameter dan parameterr itu akan di eksekusi saat proses asyn selesai
+* dengann callback prrogram dapat menerima yang dibutuhkan dalam proses asyncronus
+
+
+** asyncronus METHON BAWAAN JAVASCRIPT
+1. setTimeOut(callback, timelnMilis), digunakan untuk menjalankan proses asyncronus sekali waktu tertentu (dipanggil setelah waktu yang ditentukan selesai)
+2. setInterval(callback, timelnMilis), digunakan untuk menjalankan proses asyncronus secara periodik dalam waktu tertentu (dipanggil setiap interval waktunya)
