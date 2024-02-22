@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="respon"></h1>
+    <script>
+
+        // dibawah ini adalah contoh untuk menerima data di AJAX
+        const ajax = new XMLHttpRequest()//kita wajin implement object XMLHttpRequest() jika ingin menggunakan AJAX
+        ajax.open('GET','api/constumer.json')
+        ajax.addEventListener("load", function () {// load adalah method bawaan dari ajax
+            const json = JSON.parse(ajax.responseText)
+            const header = document.getElementById("respon")
+
+            header.textContent = ajax.response
+        })
+
+        ajax.send()
+        
+
+
+    </script>
+</body>
+</html>
