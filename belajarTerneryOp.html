@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // tanpa ternery
+        let nilai = 70
+        let ucapan;
+        if (nilai >70){
+            ucapan = "anda lulus"
+        }else{
+            ucapan = "anda belum lulus"
+        }
+
+        document.writeln(`<p>${ucapan}</p>`)
+
+
+        //dengan menggunakan ternery operator
+        const selamat = nilai > 70 ? "selamat anda telah lulus" : "maaf yaa anda belum lulus"//dengan ternery bahkan kita bisa set variabelnya const, untuk string pertama nilai true dan string kedua nilai false
+        document.writeln(`<p>${selamat}</p>`)
+
+    </script>
+
+
+</body>
+</html>
