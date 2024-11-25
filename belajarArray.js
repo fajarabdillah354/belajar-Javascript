@@ -76,7 +76,7 @@ const macamArray = [
       // lari sebuah function kita bisa memanggil langsung seperti macamArray[index].lari()
       console.log("sedang berlari");
     },
-    berhenti: function () {
+    berhenti: function () { //ini adalah contoh dari object method
       // sama seperti lari
       console.log("sedang berhenti");
     },

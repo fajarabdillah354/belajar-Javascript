@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // function isContains(array, searchValue) {
+        //     for(const element of array){
+        //         console.info(`iterasi ke - ${element}`)
+        //         if(element === searchValue){
+        //             return true//ketika ketemu nilai yang dicari maka langsung berhenti
+        //         }
+        //     }
+        //     console.info(`searching ${element} tidak ditemukan`)//ini akan menghasilkan error karna searching data kita tidak ada dalam element
+        //     return false
+            
+        // }
+
+        // isContains([1,3,6,19,21,36,38,40,1251,3231,43,5,66],354)// memanggil function isContains()
+
+        // game mengecek initial nama
+        
+        
+
+        let nisaCantik = (arrayName, cari) => {
+            for(const element of arrayName){
+                console.log(`iterasi ke ${element}`)
+                if(cari === element){
+                    console.log(`data ${cari} ditemukan`)
+                    return true
+                }
+            }
+            console.log(`data ${cari} tidak ditemukan`)
+            return false
+
+        }
+        
+        
+        console.log(nisaCantik(["kambing", "kucing", "ayam", "beruang", "unta", "komodo"], "ular"))
+
+        
+
+    </script>
+
+
+
+</body>
+</html>

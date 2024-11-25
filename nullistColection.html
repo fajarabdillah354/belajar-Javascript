@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //ini tanpa menggunakan nullist-colection
+
+        let parameter;
+        let data = parameter
+        if (data === undefined || data == null) {//hanya digunakan jika kita tidak mau data kita null atau undefine
+            data = "nilai default"
+        }
+        document.writeln(`<p>${data}</p>`)
+
+        //dengan menggunakan nullist-colection
+        data = parameter ?? "nilai default"//dengan menggunakan operator ?? menunjukan undefine dan null 
+        document.writeln(`<p>${data}</p>`)
+        
+
+    </script>
+
+</body>
+</html>

@@ -27,8 +27,8 @@ const arrayOri = ["kambing", "kucing", "ayam", "kelinci"];
 console.log("====== LOOP FOR =====");
 // for
 for (let i = 1; i <= 10; i++) {
-  // kondisi 1 : inisial variabel dengan nilai awal, kondisi 2 : inisial batas looping, kondisi 3 increment atau decrement
-  console.log("data ke - " + i);
+  // kondisi 1 : inisial variabel awal(hanya sekali diawal sebelum perulangan), kondisi 2 : inisial batas looping(jika true dieksekusi), kondisi 3 post statement(selalu diakhir)
+  console.log("data ke - " + i); //ini akan selalu diulang sampai kondisi 2 tidak terpenuhi
 }
 
 // for in
@@ -57,18 +57,20 @@ arrayOri.map((values, index) => {
   console.log(values);
 });
 
-//CONTOH DENGAN WHILE, DO-WHILE
+//CONTOH DENGAN WHILE, DO-WHILE (lebih sederhana)
 // while
 console.log("====== LOOP WHILE =====");
 let i = 1;
-while (i <= 10) {
+while (i <= 10) {//while hanya menggunakan kondisinya saja tanpa init dan post
   console.log("data ke - " + i);
   i++; // harus kita incerement di akhir karna jika tidak nilai akan selalu true dan akan mengakibatkan infinite loop
 }
 
-// do-while
+// do-while(biasanya digunakan untuk menampil menu)
 let x = 1;
 do {
   console.log("welcome to do while - " + x); // setidaknya akan dieksekusi sekali dulu lalu akan mengecek statment sampe batas while
   x++;
-} while (x <= 5);
+} while (x <= 5);//bedanya dengan while adalah kalo ini pengecekannya diakhir
+
+
